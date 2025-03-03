@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SBM_System_Backend.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\SBM_System_Frontend\\SBM_System_Frontend.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

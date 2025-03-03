@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SBM_System_Backend.props" />
+</Project>

@@ -1,0 +1,508 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\visual studio\\projects\\SBM_System_Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\sbm_system_backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:sbm_system_backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\entity\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:entity\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\admin\\createservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\admin\\updateservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\dtos\\bookingstatusupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:dtos\\bookingstatusupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\entity\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:entity\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\home\\createservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\appdbcontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:appdbcontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\home\\createservice.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FBF7F8-3DED-4130-BEAB-DDA4BD5E2A9F}|..\\SBM_System_Frontend\\SBM_System_Frontend.csproj|f:\\visual studio\\projects\\sbm_system_frontend\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|f:\\visual studio\\projects\\sbm_system_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5079AD4A-B6CA-4FBC-BAC7-5346AF489DBA}|SBM_System_Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SBM_System_Backend.csproj",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\SBM_System_Backend.csproj",
+              "RelativeDocumentMoniker": "SBM_System_Backend.csproj",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\SBM_System_Backend.csproj",
+              "RelativeToolTip": "SBM_System_Backend.csproj",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA8AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-23T20:51:05.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServiceController.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "Controllers\\ServiceController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T06:20:25.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAowLEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T17:59:17.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAMBdwF4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T05:24:57.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateService.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Admin\\CreateService.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Admin\\CreateService.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Admin\\CreateService.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Admin\\CreateService.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAMBdwDoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T16:20:56.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T18:00:06.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Home\\About.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T18:00:50.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Service.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\Entity\\Service.cs",
+              "RelativeDocumentMoniker": "Entity\\Service.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\Entity\\Service.cs",
+              "RelativeToolTip": "Entity\\Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T21:53:13.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T20:59:43.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateService.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Admin\\UpdateService.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Admin\\UpdateService.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Admin\\UpdateService.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Admin\\UpdateService.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwFkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T15:07:48.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwEUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T16:57:37.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookingStatusUpdate.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\DTOs\\BookingStatusUpdate.cs",
+              "RelativeDocumentMoniker": "DTOs\\BookingStatusUpdate.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\DTOs\\BookingStatusUpdate.cs",
+              "RelativeToolTip": "DTOs\\BookingStatusUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T08:13:52.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\Entity\\Booking.cs",
+              "RelativeDocumentMoniker": "Entity\\Booking.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\Entity\\Booking.cs",
+              "RelativeToolTip": "Entity\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T22:01:13.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Controllers\\AdminController.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:00:10.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Controllers\\HomeController.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAcwCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T17:58:09.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateService.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvz8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T16:21:05.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBpwB0AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T10:45:20.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAACBzwD4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T16:45:17.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T05:24:09.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Edit.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Edit.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T14:45:58.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-23T18:26:49.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T09:58:26.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegisterDto.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T09:43:54.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\AppDbContext\\DataContext.cs",
+              "RelativeDocumentMoniker": "AppDbContext\\DataContext.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\AppDbContext\\DataContext.cs",
+              "RelativeToolTip": "AppDbContext\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T20:50:54.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CreateService.cshtml",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T18:58:31.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Web.config",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Web.config",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Web.config",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Web.config",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-26T17:00:28.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Web.config",
+              "RelativeDocumentMoniker": "..\\SBM_System_Frontend\\Views\\Web.config",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Frontend\\Views\\Web.config",
+              "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Web.config",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-26T17:00:36.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "Entity\\User.cs",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\Entity\\User.cs",
+              "RelativeToolTip": "Entity\\User.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T21:25:45.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\visual studio\\projects\\SBM_System_Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\visual studio\\projects\\SBM_System_Backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-23T20:56:31.149Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
