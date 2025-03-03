@@ -1,0 +1,210 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2 class="mb-4">Available Services</h2>
+
+<!-- ✅ Create Service Button (Only for Admins) -->
+<button id="createServiceBtn" class="btn btn-primary" style="display: none;">Create Service</button>
+
+<!-- ✅ Service Table -->
+<table class="table table-striped" id="servicesTable" style="display: none;">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Service Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="servicesTableBody"></tbody>
+</table>
+
+<p id="loginMessage" style="display: none; color: red;">
+    Please <a href="/Auth/Login">log in</a> to view available services.
+</p>
+
+<!-- ✅ jQuery & Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        let token = localStorage.getItem("token");
+        let role = localStorage.getItem("role");
+        let userId = localStorage.getItem("id");
+
+        if (token) {
+            $("#servicesTable").show();
+            fetchServices();
+
+            if (role === "Admin") {
+                $("#createServiceBtn").show();
+            }
+        } else {
+            $("#loginMessage").show();
+        }
+
+        // Redirect to Create Service page for Admin
+        $("#createServiceBtn").click(function () {
+            window.location.href = "/Home/CreateService";
+        });
+
+        // Fetch all services from the backend
+        function fetchServices() {
+            $.ajax({
+                url: `https://localhost:7222/api/Service/GetAllServices`,
+                type: "GET",
+                headers: {
+                    "Authorization": `Bearer ${token}`
+                },
+                success: function (services) {
+                    let tableBody = $("#servicesTableBody");
+                    tableBody.empty();
+
+                    if (!services || services.length === 0) {
+                        tableBody.append("<tr><td colspan='5' class='text-center'>No services available</td></tr>");
+                        return;
+                    }
+
+                    // Iterate through the services and display them
+                    services.forEach((service, index) => {
+                        let actionButtons = '';
+
+                        if (role === "Admin") {
+                            actionButtons = `
+                                <button class="btn btn-success btn-sm approve-btn" data-id="${service.id}">Approve</button>
+                                <button class="btn btn-danger btn-sm reject-btn" data-id="${service.id}">Reject</button>
+                            `;
+                        } else if (role === "Customer") {
+                            actionButtons = `
+                                <button class="btn btn-primary btn-sm book-btn" data-id="${service.id}">Book</button>
+                            `;
+                        }
+
+                        tableBody.append(`
+                            <tr>
+                                <th>${index + 1}</th>
+                                <td>${service.name}</td>
+                                <td>${service.description}</td>
+                                <td>$${service.price}</td>
+                                <td>
+                                    ${actionButtons}
+                                </td>
+                            </tr>
+                        `);
+                    });
+
+                    // Add event listeners for the buttons
+                    addActionListeners();
+                },
+                error: function (xhr) {
+                    console.error("Error fetching services:", xhr.status, xhr.responseText);
+                    alert("Failed to load services.");
+                }
+            });
+        }
+
+        // Add action listeners for Admin and Customer buttons
+        function addActionListeners() {
+            // Approve button click event (for Admin)
+            $(document).on("click", ".approve-btn", function () {
+                let serviceId = $(this).data("id");
+                approveService(serviceId);
+            });
+
+            // Reject button click event (for Admin)
+            $(document).on("click", ".reject-btn", function () {
+                let serviceId = $(this).data("id");
+                rejectService(serviceId);
+            });
+
+            // Book button click event (for Customer)
+            $(document).on("click", ".book-btn", function () {
+                let serviceId = $(this).data("id");
+                let button = $(this);
+                bookService(serviceId, button);
+            });
+        }
+
+        // Function to approve a service (Admin action)
+        function approveService(serviceId) {
+            $.ajax({
+                url: `https://localhost:7222/api/Service/ApproveService?id=${serviceId}`, // ✅ Ensure correct API endpoint format
+                type: "PUT",
+                headers: {
+                    "Authorization": `Bearer ${token}`,
+                    "Content-Type": "application/json"
+                },
+                data: JSON.stringify(true), // ✅ Send 'true' directly instead of an object
+                success: function (response) {
+                    alert(response.message);
+                    fetchServices(); // ✅ Reload the services list
+                },
+                error: function (xhr) {
+                    console.error("Error approving service:", xhr.responseText);
+                    alert("Failed to approve service.");
+                }
+            });
+        }
+
+
+
+        // Function to reject a service (Admin action)
+        function rejectService(serviceId) {
+            $.ajax({
+                url: `https://localhost:7222/api/Service/RejectService/${serviceId}`,
+                type: "PUT",
+                headers: {
+                    "Authorization": `Bearer ${token}`
+                },
+                data: JSON.stringify({ isApproved: false }),
+                contentType: "application/json",
+                success: function () {
+                    alert("Service rejected successfully!");
+                    fetchServices(); // Reload the services
+                },
+                error: function (xhr) {
+                    console.error("Error rejecting service:", xhr.responseText);
+                    alert("Failed to reject service.");
+                }
+            });
+        }
+
+        function bookService(serviceId, button) {
+            let token = localStorage.getItem("token");  // Retrieve token from local storage
+            let userId = localStorage.getItem("id");    // Retrieve userId from local storage
+
+            if (!token) {
+                alert("You must be logged in to book a service.");
+                return;
+            }
+
+            if (!userId) {
+                alert("User ID is missing.");
+                return;
+            }
+
+            $.ajax({
+                url: `https://localhost:7222/api/Service/BookService?userId=${userId}&serviceId=${serviceId}`,  // Pass serviceId as query parameter
+                type: "POST",
+                headers: {
+                    "Authorization": `Bearer ${token}`
+                },
+               
+                contentType: "application/json",
+                success: function () {
+                    alert("Service booked successfully!");
+                    button.prop("disabled", true); // Disable the book button after booking
+                },
+                error: function (xhr) {
+                    console.error("Error booking service:", xhr.responseText);
+                    alert("Failed to book service.");
+                }
+            });
+        }
+
+
+    });
+</script>

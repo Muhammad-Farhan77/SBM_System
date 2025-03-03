@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section style="background-color: #eee;">
+    <div class="container-lg h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-4 mt-4">Login</p>
+
+                                <form id="loginForm" class="mx-1 mx-md-4">
+                                    <div class="mb-4">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" id="email" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" id="password" class="form-control" required>
+                                    </div>
+
+                                    <div class="d-flex justify-content-start">
+                                        <button type="submit" class="btn btn-primary btn-md">Login</button>
+                                    </div>
+                                </form>
+                                <p class="mt-3">Don't have an account? <a href="/Auth/Register">Register here</a></p>
+                            </div>
+
+                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                                     class="img-fluid" alt="Sample image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#loginForm").submit(function (event) {
+            event.preventDefault();
+
+            let email = $("#email").val();
+            let password = $("#password").val();
+
+            $.ajax({
+                url: "https://localhost:7222/api/auth/login",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ email: email, password: password }),
+                success: function (response) {
+                    if (response.token) {
+                        // ✅ Store token and user info in localStorage
+                        localStorage.setItem("token", response.token);
+                        localStorage.setItem("id", response.userId);
+                        localStorage.setItem("email", response.email);
+                        localStorage.setItem("role", response.role);
+
+                        alert("Login Successful! Redirecting...");
+                        window.location.href = "/Home/Index";
+                    } else {
+                        alert("Login failed: " + response.message);
+                    }
+                },
+                error: function (xhr) {
+                    alert("Invalid email or password.");
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <!-- General Navigation Links (Hidden by Default) -->
+                    <li id="homeLink" style="display: none;">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li id="aboutLink" style="display: none;">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li id="contactLink" style="display: none;">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+                    <!-- Authentication Links -->
+                    <li id="loginLink">@Html.ActionLink("Login", "Login", "Auth", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li id="registerLink">@Html.ActionLink("Register", "Register", "Auth", new { area = "" }, new { @class = "nav-link" })</li>
+
+                    <!-- Admin Link (Only for Admins) -->
+                    <li id="adminLink" style="display: none;">@Html.ActionLink("Services", "Dashboard", "Admin", new { area = "" }, new { @class = "nav-link" })</li>
+
+                    <!-- Logout Link -->
+                    <li id="logoutLink" style="display: none;"><a class="nav-link" href="#" onclick="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            checkAuthStatus();
+        });
+
+        function checkAuthStatus() {
+            let token = localStorage.getItem("token");
+            let role = localStorage.getItem("role");
+
+            console.log("Token found:", token);
+            console.log("User Role:", role);
+
+            // Get elements
+            let homeLink = document.getElementById("homeLink");
+            let aboutLink = document.getElementById("aboutLink");
+            let contactLink = document.getElementById("contactLink");
+            let loginLink = document.getElementById("loginLink");
+            let registerLink = document.getElementById("registerLink");
+            let logoutLink = document.getElementById("logoutLink");
+            let adminLink = document.getElementById("adminLink");
+
+            if (token && token.trim() !== "" && token !== "null" && token !== "undefined") {
+                console.log("✅ User is logged in");
+
+                // Hide login/register
+                if (loginLink) loginLink.style.display = "none";
+                if (registerLink) registerLink.style.display = "none";
+
+                // Show general links
+                if (homeLink) homeLink.style.display = "block";
+                if (aboutLink) aboutLink.style.display = "block";
+                if (contactLink) contactLink.style.display = "block";
+
+                // Show logout
+                if (logoutLink) logoutLink.style.display = "block";
+
+                // Show admin link if role is "Admin"
+                if (role === "Admin") {
+                    console.log("✅ Admin detected");
+                    if (adminLink) adminLink.style.display = "block";
+                } else {
+                    console.log("🔹 Not an admin");
+                    if (adminLink) adminLink.style.display = "none";
+                }
+            } else {
+                console.log("❌ No token found. User is not logged in");
+
+                // Show login/register
+                if (loginLink) loginLink.style.display = "block";
+                if (registerLink) registerLink.style.display = "block";
+
+                // Hide general navigation & logout/admin links
+                if (homeLink) homeLink.style.display = "none";
+                if (aboutLink) aboutLink.style.display = "none";
+                if (contactLink) contactLink.style.display = "none";
+                if (logoutLink) logoutLink.style.display = "none";
+                if (adminLink) adminLink.style.display = "none";
+            }
+        }
+
+        // Logout function
+        function logout() {
+            localStorage.removeItem("token");
+            localStorage.removeItem("role");
+            alert("Logged out successfully!");
+            window.location.href = "/Auth/Login";
+        }
+    </script>
+
+</body>
+</html>

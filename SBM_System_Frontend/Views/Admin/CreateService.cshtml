@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Create Service";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card shadow-lg p-4 w-50">
+        <!-- Adjusted width -->
+        <h2 class="text-center mb-4">Create Service</h2>
+
+        <form id="createServiceForm">
+            <div class="mb-3">
+                <label for="serviceName" class="form-label">Service Name</label>
+                <input type="text" class="form-control w-100" id="serviceName" required> <!-- Ensure full width -->
+            </div>
+
+            <div class="mb-3">
+                <label for="serviceDescription" class="form-label">Description</label>
+                <textarea class="form-control w-100" id="serviceDescription" rows="3" required></textarea> <!-- Full width -->
+            </div>
+
+            <div class="mb-3">
+                <label for="servicePrice" class="form-label">Price ($)</label>
+                <input type="number" class="form-control w-100" id="servicePrice" required> <!-- Full width -->
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Create Service</button> <!-- Full-width button -->
+        </form>
+    </div>
+</div>
+
+<!-- ✅ jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#createServiceForm").submit(function (e) {
+            e.preventDefault(); // Prevent form from submitting normally
+
+            let token = localStorage.getItem("token"); // Get token from localStorage
+            if (!token) {
+                alert("You are not authorized. Please log in.");
+                return;
+            }
+
+            let serviceData = {
+                name: $("#serviceName").val(),
+                description: $("#serviceDescription").val(),
+                price: parseFloat($("#servicePrice").val())
+            };
+
+            $.ajax({
+                url: "https://localhost:7222/api/service/CreateService",
+                type: "POST",
+                contentType: "application/json",
+                headers: { "Authorization": `Bearer ${token}` },
+                data: JSON.stringify(serviceData),
+                success: function () {
+                    alert("Service created successfully!");
+                    window.location.href = "/Admin/Dashboard";
+                },
+                error: function (xhr) {
+                    alert("Error: " + xhr.responseText);
+                }
+            });
+        });
+    });
+</script>

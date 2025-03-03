@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "Edit Service";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card shadow-lg p-4 w-50">
+        <h2 class="text-center mb-4">Edit Service</h2>
+
+        <form id="editServiceForm">
+            <input type="hidden" id="serviceId" />
+
+            <div class="mb-3">
+                <label for="serviceName" class="form-label">Service Name</label>
+                <input type="text" id="serviceName" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="serviceDescription" class="form-label">Description</label>
+                <textarea id="serviceDescription" class="form-control" rows="3" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="servicePrice" class="form-label">Price ($)</label>
+                <input type="number" id="servicePrice" class="form-control" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Update Service</button>
+        </form>
+    </div>
+</div>
+
+<!-- ✅ jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceId = urlParams.get("serviceId");
+
+        if (!serviceId) {
+            alert("No service ID provided!");
+            window.location.href = "/Admin/Dashboard"; // Redirect if no ID
+            return;
+        }
+
+        // ✅ Fetch service details
+        $.ajax({
+            url: `https://localhost:7222/api/Service/GetServiceById?id=${serviceId}`,
+            type: "GET",
+            headers: {
+                "Authorization": `Bearer ${localStorage.getItem("token")}`
+            },
+            success: function (service) {
+                $("#serviceId").val(service.id);
+                $("#serviceName").val(service.name);
+                $("#serviceDescription").val(service.description);
+                $("#servicePrice").val(service.price);
+            },
+            error: function (xhr) {
+                console.error("Error loading service:", xhr.responseText);
+                alert("Failed to load service details.");
+            }
+        });
+
+        // ✅ Handle form submission
+        $("#editServiceForm").submit(function (e) {
+            e.preventDefault();
+
+            let token = localStorage.getItem("token");
+            if (!token) {
+                alert("You are not authorized. Please log in.");
+                return;
+            }
+
+            // Collecting the service data
+            let serviceData = {
+                id: $("#serviceId").val(),
+                name: $("#serviceName").val(),
+                description: $("#serviceDescription").val(),
+                price: parseFloat($("#servicePrice").val())
+            };
+
+            // Log service data to console to inspect it
+            console.log("Service Data:", serviceData);
+
+            $.ajax({
+                url: `https://localhost:7222/api/Service/UpdateService?id=${serviceData.id}`, // Correct URL format
+                type: "PUT",
+                contentType: "application/json",
+                data: JSON.stringify(serviceData),
+                headers: {
+                    "Authorization": `Bearer ${token}` // Ensure Authorization header is included
+                },
+                success: function () {
+                    alert("Service updated successfully!");
+                    window.location.href = "/Admin/Dashboard"; // Redirect to Admin Dashboard
+                },
+                error: function (xhr) {
+                    console.error("Update failed:", xhr.responseText);
+                    alert("Failed to update service.");
+                }
+            });
+        });
+    });
+
+
+</script>
