@@ -1,0 +1,243 @@
+﻿@{
+    Layout = null;
+}
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #000; /* Set background to black */
+        font-family: 'Pacifico', cursive;
+        color: #fff;
+        overflow: hidden; /* Prevents scrollbars from appearing */
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 50px;
+        gap: 40px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .text-content {
+        max-width: 600px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 1rem;
+        animation: fadeInDown 2s ease-in-out;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin-top: 30px;
+        animation: fadeInUp 3s ease-in-out;
+    }
+
+    img {
+        width: 100%;
+        height: auto; /* Ensure the image maintains aspect ratio */
+        max-width: 700px; /* Prevent the image from growing too large */
+        max-height: 700px; /* Limit the height */
+        border-radius: 20px;
+        border: 5px solid white;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        animation: zoomIn 2s ease-in-out;
+        object-fit: contain; /* Ensures the full image is visible */
+    }
+
+    .heart {
+        color: red;
+        font-size: 4rem;
+        animation: pulse 1s infinite;
+    }
+
+    /* Surprise button styling */
+    .surprise-button {
+        background-color: #ff4081;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+        .surprise-button:hover {
+            background-color: #ff65a3;
+        }
+
+    /* Fireworks animation */
+    .firework {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    @@keyframes fadeInDown {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    @@keyframes fadeInUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    @@keyframes zoomIn {
+        from
+
+    {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+    }
+
+    @@keyframes pulse {
+        0%
+
+    {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="@Url.Content("~/images/her-photo.jpg.jpg")" alt="Her Photo" />
+        <div class="text-content">
+            <h1>🎉 Happy Birthday My Saniiiii 🎂</h1>
+            <h2>
+                I know things aren’t the same between us right now, and it's hard for me to find the right words. But no matter what, I still care for you deeply. I’ve been hurt  💔, but I’m still holding on to the good moments we shared. I wish you nothing but happiness today, even though my heart feels heavy.
+
+                Sometimes, the people who hurt you the most are the ones you love the most.
+
+                I hope this year brings you peace and joy, and maybe, with time, we can heal and find our way back.
+            </h2>
+            <div class="heart">💖</div>
+
+            <!-- Surprise Button -->
+            <button class="surprise-button" onclick="window.location.href = '@Url.Action("Gift", "Surprise")';">Somethimg special for you ❤️ </button>
+
+        </div>
+    </div>
+
+    <!-- Fireworks JavaScript -->
+    <script>
+        function createFireworks() {
+            const canvas = document.createElement('canvas');
+            canvas.className = 'firework';
+            document.body.appendChild(canvas);
+            const ctx = canvas.getContext('2d');
+            const particles = [];
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+
+            // Firework particle class
+            class Particle {
+                constructor(x, y, color) {
+                    this.x = x;
+                    this.y = y;
+                    this.size = Math.random() * 3 + 2;
+                    this.speedX = Math.random() * 6 - 3;
+                    this.speedY = Math.random() * 6 - 3;
+                    this.color = color;
+                    this.life = 100;
+                }
+
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+                    this.speedY += 0.05; // gravity effect
+                    this.life -= 1;
+                }
+
+                draw() {
+                    ctx.fillStyle = this.color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+
+            // Firework function to create particles
+            function firework() {
+                let x = Math.random() * width;
+                let y = Math.random() * height / 2;
+                let color = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                for (let i = 0; i < 100; i++) {
+                    particles.push(new Particle(x, y, color));
+                }
+            }
+
+            // Animation loop
+            function animate() {
+                ctx.clearRect(0, 0, width, height);
+                particles.forEach((particle, index) => {
+                    particle.update();
+                    particle.draw();
+                    if (particle.life <= 0) {
+                        particles.splice(index, 1);
+                    }
+                });
+                requestAnimationFrame(animate);
+            }
+
+            firework(); // Create an initial firework
+            animate();  // Start animation loop
+
+            // Repeat fireworks every 3-4 seconds
+            setInterval(firework, Math.random() * 2000 + 1000);
+        }
+
+        // Start fireworks when the page loads
+        window.onload = createFireworks;
+    </script>
+</body>

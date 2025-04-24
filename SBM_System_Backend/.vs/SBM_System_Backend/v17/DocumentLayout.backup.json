@@ -109,16 +109,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -129,8 +121,7 @@
               "RelativeToolTip": "SBM_System_Backend.csproj",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAA8AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-23T20:51:05.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T20:51:05.574Z"
             },
             {
               "$type": "Document",
@@ -146,10 +137,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Index.cshtml",
@@ -159,8 +146,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAKEAAAAAAAAAAAAowLEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-23T17:59:17.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T17:59:17.965Z"
             },
             {
               "$type": "Document",
@@ -172,8 +158,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Auth\\Register.cshtml",
               "ViewState": "AgIAAE0AAAAAAAAAAMBdwF4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T05:24:57.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T05:24:57.553Z"
             },
             {
               "$type": "Document",
@@ -185,8 +170,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Admin\\CreateService.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAMBdwDoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T16:20:56.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T16:20:56.818Z"
             },
             {
               "$type": "Document",
@@ -198,8 +182,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\Contact.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-23T18:00:06.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T18:00:06.733Z"
             },
             {
               "$type": "Document",
@@ -211,8 +194,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\About.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-23T18:00:50.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T18:00:50.683Z"
             },
             {
               "$type": "Document",
@@ -224,8 +206,7 @@
               "RelativeToolTip": "Entity\\Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T21:53:13.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T21:53:13.745Z"
             },
             {
               "$type": "Document",
@@ -237,8 +218,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T20:59:43.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T20:59:43.231Z"
             },
             {
               "$type": "Document",
@@ -250,8 +230,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Admin\\UpdateService.cshtml",
               "ViewState": "AgIAAEgAAAAAAAAAAAAUwFkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T15:07:48.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T15:07:48.408Z"
             },
             {
               "$type": "Document",
@@ -263,8 +242,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Admin\\Dashboard.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAUwEUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T16:57:37.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T16:57:37.204Z"
             },
             {
               "$type": "Document",
@@ -276,8 +254,7 @@
               "RelativeToolTip": "DTOs\\BookingStatusUpdate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T08:13:52.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T08:13:52.809Z"
             },
             {
               "$type": "Document",
@@ -289,8 +266,7 @@
               "RelativeToolTip": "Entity\\Booking.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T22:01:13.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T22:01:13.96Z"
             },
             {
               "$type": "Document",
@@ -302,8 +278,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAIwBAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:00:10.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T17:00:10.248Z"
             },
             {
               "$type": "Document",
@@ -315,8 +290,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Controllers\\HomeController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAcwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T17:58:09.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T17:58:09.218Z"
             },
             {
               "$type": "Document",
@@ -328,8 +302,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
               "ViewState": "AgIAACIAAAAAAAAAAADwvz8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T16:21:05.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T16:21:05.342Z"
             },
             {
               "$type": "Document",
@@ -341,8 +314,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAIBpwB0AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T10:45:20.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T10:45:20.939Z"
             },
             {
               "$type": "Document",
@@ -354,8 +326,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Auth\\Login.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAACBzwD4AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T16:45:17.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T16:45:17.472Z"
             },
             {
               "$type": "Document",
@@ -367,8 +338,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T05:24:09.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T05:24:09.016Z"
             },
             {
               "$type": "Document",
@@ -380,8 +350,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T14:45:58.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T14:45:58.403Z"
             },
             {
               "$type": "Document",
@@ -393,8 +362,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-23T18:26:49.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T18:26:49.158Z"
             },
             {
               "$type": "Document",
@@ -406,8 +374,7 @@
               "RelativeToolTip": "DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T09:58:26.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T09:58:26.375Z"
             },
             {
               "$type": "Document",
@@ -419,8 +386,7 @@
               "RelativeToolTip": "DTOs\\RegisterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T09:43:54.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T09:43:54.441Z"
             },
             {
               "$type": "Document",
@@ -432,8 +398,7 @@
               "RelativeToolTip": "AppDbContext\\DataContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T20:50:54.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T20:50:54.027Z"
             },
             {
               "$type": "Document",
@@ -445,8 +410,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Home\\CreateService.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T18:58:31.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T18:58:31.137Z"
             },
             {
               "$type": "Document",
@@ -471,8 +435,7 @@
               "RelativeToolTip": "..\\SBM_System_Frontend\\Views\\Web.config",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-02-26T17:00:36.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T17:00:36.957Z"
             },
             {
               "$type": "Document",
@@ -484,8 +447,7 @@
               "RelativeToolTip": "Entity\\User.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T21:25:45.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T21:25:45.789Z"
             },
             {
               "$type": "Document",
@@ -497,8 +459,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-23T20:56:31.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T20:56:31.149Z"
             }
           ]
         }
